@@ -133,8 +133,40 @@ main{
 
 
 @media (min-width: 768px){
-    main{
+    body{
+        padding: 0.5rem;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
 
+    main{
+        margin: 1rem auto;
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .main_pergunta{
+        padding: 0.75rem 0;
+    }
+}
+
+@media (max-width: 480px){
+    .main_titulo{
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .main_titulo img{
+        width: 40px;
+    }
+
+    .main_pergunta{
+        align-items: flex-start;
+    }
+
+    .main_pergunta p{
+        text-align: left;
     }
 }
 
